@@ -23,10 +23,10 @@ export default function Navbar() {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 font-light text-lg">
-            <a href="#home" className="hover:text-gray-900 transition">Home</a>
-            <a href="#resources" className=" hover:text-gray-900 transition">Resources</a>
-            <a href="#docs" className="hover:text-gray-900 transition">Docs</a>
-            <a href="#pricing" className=" hover:text-gray-900 transition">Pricing</a>
+            <a href="/" className="hover:text-gray-900 transition">Home</a>
+            <a href="/resources" className=" hover:text-gray-900 transition">Resources</a>
+            <a href="/docs" className="hover:text-gray-900 transition">Docs</a>
+            <a href="/pricing" className=" hover:text-gray-900 transition">Pricing</a>
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -51,10 +51,10 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t">
             <div className="flex flex-col space-y-3">
-              <a href="#home" className="text-gray-600 hover:text-gray-900">Home</a>
-              <a href="#resources" className="text-gray-600 hover:text-gray-900">Resources</a>
-              <a href="#docs" className="text-gray-600 hover:text-gray-900">Docs</a>
-              <a href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
+              <a href="/" className="text-gray-600 hover:text-gray-900">Home</a>
+              <a href="/resources" className="text-gray-600 hover:text-gray-900">Resources</a>
+              <a href="/docs" className="text-gray-600 hover:text-gray-900">Docs</a>
+              <a href="/pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
               <button className="px-4 py-2 border border-gray-300 rounded-lg text-left">
                 Request Demo
               </button>

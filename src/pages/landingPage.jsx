@@ -11,8 +11,8 @@ export default function CodemniLanding() {
             The Complete AI Agent Framework
           </h1>
           <p className="text-2xl sm:text-2xl font-light text-gray-600 mb-8">
-            Codemni provides a complete ecosystem with intelligent tool-calling agents, 
-            multi-provider LLM integrations, and sophisticated memory systems.
+            Codemni provides a complete ecosystem with intelligent LLM agents, 
+            multi-provider LLM integrations, Prebuild Tools, Prebuild Expert level of agents and sophisticated memory systems.
           </p>
           <div className="flex flex-col sm:flex-row justify-start gap-4">
             <button className="px-6 py-3 border-2 border rounded-3xl hover:bg-gray-50 transition font-medium">
@@ -42,7 +42,7 @@ export default function CodemniLanding() {
       {/* Feature Cards */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
             {[
               {
                 title: "Complete Agent Framework",
@@ -59,11 +59,19 @@ export default function CodemniLanding() {
               {
                 title: "Developer-Friendly",
                 desc: "Intuitive APIs, comprehensive documentation, and consistent interfaces"
+              },
+              {
+                title: "Prebuild Tools",
+                desc: "Ready-to-use tool implementations that add powerful capabilities to your Codemni agents"
+              },
+              {
+                title: "Prebuild Agents",
+                desc: "All AI have different reasoning levels and speeds—for various practical use cases"
               }
             ].map((feature, idx) => (
               <div 
                 key={idx}
-                className="bg-blue-100/50 backdrop-blur-sm rounded-2xl p-6 hover:bg-blue-100/70 transition-all h-80 duration-300 hover:shadow-lg hover:-translate-y-1 border flex flex-col justify-around"
+                className="bg-blue-100/60 backdrop-blur-sm rounded-2xl px-3 hover:bg-blue-100/70 transition-all h-100 duration-300 hover:shadow-lg hover:-translate-y-1 border flex flex-col justify-around"
               >
                 <h3 className="text-xl font-medium text-gray-900 mb-3 text-center">
                   {feature.title}
